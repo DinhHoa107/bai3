@@ -25,8 +25,8 @@
 docker --version && docker compose version
 ```
 
-<!-- Chụp terminal hiện: Docker version 29.4.0 và Docker Compose version v5.1.2 -->
-![Kiểm tra Docker](images/b1-docker-version.png)
+<img width="1481" height="761" alt="image" src="https://github.com/user-attachments/assets/cc2647e5-a46f-465f-9fdd-7de95364099a" />
+
 
 ---
 
@@ -88,8 +88,7 @@ Kiểm tra nội dung file:
 cat docker-compose.yml
 ```
 
-<!-- Chụp terminal hiện nội dung file docker-compose.yml -->
-![File docker-compose.yml](images/b2-docker-compose-file.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/afee6fdb-f522-4a67-af57-16ea0312cc9f" />
 
 ---
 
@@ -100,32 +99,24 @@ docker compose up -d
 docker compose ps
 ```
 
-<!-- Chụp terminal hiện 3 container đang Up: mariadb, phpmyadmin, wordpress -->
-![Docker Compose chạy thành công](images/b3-docker-compose-ps.png)
+<img width="1477" height="747" alt="image" src="https://github.com/user-attachments/assets/c01d840e-c406-4d1d-b31f-ad57864390b6" />
 
 ---
 
 ## Bước 4 - Cài đặt WordPress
 
-Truy cập trang cài đặt tại `http://<IP_máy>:8001`
-
-<!-- Chụp trình duyệt tại trang cài đặt WordPress (chọn ngôn ngữ) -->
-![Trang cài đặt WordPress](images/b4-wordpress-install.png)
+Truy cập trang cài đặt tại `http://192.168.1.7:8001`
 
 Điền thông tin cài đặt:
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/3bcf7ce7-05ca-45a0-9dce-db34ea194e95" />
 
-<!-- Chụp trang điền thông tin: Site Title, Username, Password, Email -->
-![Điền thông tin cài đặt](images/b4-wordpress-setup.png)
+Trang đăng nhập WordPress:
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/00be29d5-9c74-4a0f-b73c-98593c2c9062" />
 
-<!-- Chụp thông báo "WordPress đã được cài đặt thành công" -->
-![Cài đặt thành công](images/b4-wordpress-success.png)
 
 Dashboard quản trị:
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7ddaa50f-07c8-4abd-b5bf-6208eccee3f5" />
 
-<!-- Chụp trang wp-admin Dashboard -->
-![Dashboard WordPress](images/b4-wordpress-dashboard.png)
-
----
 
 ## Bước 5 - Cấu hình Cloudflare Tunnel
 
