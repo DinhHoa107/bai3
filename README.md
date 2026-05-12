@@ -127,8 +127,7 @@ curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloud
 sudo dpkg -i cloudflared.deb
 ```
 
-<!-- Chụp terminal hiện "Setting up cloudflared (2026.3.0)" -->
-![Cài cloudflared](images/b5-cloudflared-install.png)
+<img width="1488" height="747" alt="image" src="https://github.com/user-attachments/assets/55bbf838-f159-4767-9515-8224628d25c6" />
 
 ### 5.2 Tạo tunnel
 
@@ -136,8 +135,7 @@ sudo dpkg -i cloudflared.deb
 cloudflared tunnel create wordpress-btvn03
 ```
 
-<!-- Chụp terminal hiện "Created tunnel wordpress-btvn03 with id 0bc72006-..." -->
-![Tạo tunnel](images/b5-tunnel-create.png)
+<img width="1492" height="751" alt="image" src="https://github.com/user-attachments/assets/cadec9de-175a-48cf-a609-d102e8b75a4b" />
 
 ### 5.3 Tạo file cấu hình
 
@@ -174,8 +172,7 @@ Kiểm tra tunnel đang chạy:
 ps aux | grep cloudflared
 ```
 
-<!-- Chụp terminal hiện process cloudflared đang chạy -->
-![Tunnel đang chạy](images/b5-tunnel-running.png)
+<img width="1475" height="752" alt="image" src="https://github.com/user-attachments/assets/d204773d-e547-410a-a510-c19657e8f250" />
 
 ---
 
@@ -185,8 +182,8 @@ Website WordPress đã được public tại:
 
 🌐 **https://wordpress.taphamdinhhoa.io.vn**
 
-<!-- Chụp trình duyệt hiện trang chủ WordPress tại URL public -->
-![Website public - Trang chủ](images/b6-website-public.png)
+<img width="1918" height="1075" alt="image" src="https://github.com/user-attachments/assets/767c17ee-96a2-4e74-9612-c37c7cd17a4a" />
+
 
 Kiểm tra bằng curl:
 
@@ -195,8 +192,8 @@ curl -I https://wordpress.taphamdinhhoa.io.vn
 # HTTP/2 200 ✅
 ```
 
-<!-- Chụp terminal hiện HTTP/2 200 -->
-![Curl kiểm tra](images/b6-curl-check.png)
+<img width="1481" height="758" alt="image" src="https://github.com/user-attachments/assets/2ee1eeae-4eab-4fa6-8352-cf2867bbac7c" />
+
 
 ---
 
@@ -204,13 +201,12 @@ curl -I https://wordpress.taphamdinhhoa.io.vn
 
 ### Bài viết 1: Giới thiệu bản thân
 
-<!-- Chụp trang bài viết "Giới thiệu bản thân" trên website WordPress -->
-![Bài viết 1 - Giới thiệu bản thân](images/b7-post1-gioithieu.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/08e4ae03-fc76-41cf-b9f6-08493097d91c" />
+
 
 ### Bài viết 2: Giới thiệu ngành Kỹ thuật Phần mềm tại TNUT
 
-<!-- Chụp trang bài viết "Giới thiệu ngành học" trên website WordPress -->
-![Bài viết 2 - Ngành học](images/b7-post2-nganhhoc.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/c4a84276-39b4-47b7-9fb3-ed38f6a6ac2e" />
 
 ---
 
@@ -220,10 +216,10 @@ curl -I https://wordpress.taphamdinhhoa.io.vn
 Triển khai WordPress bằng Docker tốn công sức với người mới: cấu hình 3 service trong `docker-compose.yml`, xử lý lỗi hết ổ đĩa, xung đột port, IP thay đổi khi đổi mạng. Tuy nhiên sau khi cài xong, việc quản lý nội dung rất dễ dàng.
 
 ### 2. Độ dễ/khó sử dụng
-- ✅ Giao diện Dashboard thân thiện, hỗ trợ tiếng Việt
-- ✅ Tạo bài viết, thêm ảnh/video trực quan, không cần biết code
-- ✅ Kho plugin và theme miễn phí phong phú
-- ⚠️ Cấu hình ban đầu với Docker + Cloudflare Tunnel đòi hỏi kiến thức kỹ thuật
+-  Giao diện Dashboard thân thiện, hỗ trợ tiếng Việt
+-  Tạo bài viết, thêm ảnh/video trực quan, không cần biết code
+-  Kho plugin và theme miễn phí phong phú
+- Cấu hình ban đầu với Docker + Cloudflare Tunnel đòi hỏi kiến thức kỹ thuật
 
 ### 3. Tài nguyên CPU/RAM
 | Thành phần | RAM tiêu thụ |
